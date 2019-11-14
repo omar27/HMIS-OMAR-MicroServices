@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+    <property name="now" value="now()" dbms="h2"/>
+    <property name="now" value="now()" dbms="mysql"/>
+
+    <property name="floatType" value="float4" dbms="postgresql, h2"/>
+    <property name="floatType" value="float" dbms="mysql, oracle, mssql, mariadb"/>
+    <property name="clobType" value="clob" dbms="h2"/>
+    <property name="clobType" value="clob" dbms="mysql, oracle, mssql, mariadb, postgresql"/>
+    <property name="uuidType" value="varchar(36)" dbms="h2, mysql, mariadb"/>
+
+    <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191109120503_added_entity_Patient.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191110110235_added_entity_Hospital.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191110110812_added_entity_Staff.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191110111744_added_entity_PersonalInfo.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191110111854_added_entity_Department.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191110112113_added_entity_WorkingSchedule.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191110112331_added_entity_AppointmentSchedule.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191110112605_added_entity_Appointment.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191110112720_added_entity_InPatient.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191110120035_added_entity_Room.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191110120342_added_entity_Bill.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191110112720_added_entity_InPatient.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191110184317_added_entity_JobDetails.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191111212255_added_entity_StaffWorkingSchedule.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20191110110812_added_entity_constraints_Staff.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191110112331_added_entity_constraints_AppointmentSchedule.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191110112605_added_entity_constraints_Appointment.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191110112720_added_entity_constraints_InPatient.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191110120035_added_entity_constraints_Room.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191110120342_added_entity_constraints_Bill.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191111212255_added_entity_constraints_StaffWorkingSchedule.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191109120503_added_entity_constraints_Patient.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
+</databaseChangeLog>

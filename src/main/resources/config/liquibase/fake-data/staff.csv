@@ -1,0 +1,11 @@
+id;staff_type;qualification;joining_date;experience;is_regular;department_id;job_details_id;staff_working_schedule_id
+1;DOCTOR;Home Loan Account Table Computer;2019-11-11;45924;true;1;1;1
+2;DOCTOR;Tasty Metal Bacon;2019-11-10;21233;false;2;2;2
+3;RECEPTIONIST;methodology Albania;2019-11-11;2306;false;3;3;3
+4;DOCTOR;Coordinator;2019-11-11;45606;false;4;4;4
+5;NURSE;Refined Rubber Chicken Table;2019-11-11;1326;true;5;5;5
+6;DOCTOR;Public-key;2019-11-11;44015;true;6;6;6
+7;RECEPTIONIST;Games Regional Digitized;2019-11-11;75536;false;7;7;7
+8;NURSE;Industrial;2019-11-11;77513;false;8;8;8
+9;DOCTOR;Awesome;2019-11-11;52083;false;9;9;9
+10;RECEPTIONIST;Louisiana Specialist Home Loan Account;2019-11-11;14092;false;10;10;10

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity StaffWorkingSchedule.
+    -->
+    <changeSet id="20191111212255-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="staff_id"
+                                 baseTableName="staff_working_schedule"
+                                 constraintName="fk_staff_working_schedule_staff_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="staff"/>
+
+        <addForeignKeyConstraint baseColumnNames="working_schedule_id"
+                                 baseTableName="staff_working_schedule"
+                                 constraintName="fk_staff_working_schedule_working_schedule_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="working_schedule"/>
+
+    </changeSet>
+</databaseChangeLog>
